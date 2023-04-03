@@ -1,0 +1,36 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+#app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+#zoomUp,
+#zoomed {
+  height: 350px;
+  width: 1000px;
+}
+#zoomUp {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+#zoomed {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+#zoomed > img {
+  position: absolute;
+}
+#zoomUp > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
