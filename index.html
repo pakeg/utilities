@@ -7,15 +7,20 @@
 </head>
 
 <body>
-	<div id="app">
-		<div id="zoomUp">
-			<img src="src/img/img102.jpg" loading="lazy"/>
-		</div>		
-		<div id="zoomed"><img src="src/img/img102.jpg" loading="lazy"/></div>
+	<div>
+		<div id="gallery">
+			<wrap></wrap>
+		</div>
+		<div id="app">
+			<div id="zoomUp">
+				<img src="src/img/img102.jpg" loading="lazy"/>
+			</div>		
+			<div id="zoomed"><img src="src/img/img102.jpg" loading="lazy"/></div>
+		</div>
 	</div>
-	
-	<script src="src/index.js">
-	</script>
+	<script src="https://unpkg.com/vue@3.2.47/dist/vue.global.js"></script>
+	<script src="src/index.js"></script>
+	<script src="src/gallery.js"></script>
 </body>
 
 </html>
