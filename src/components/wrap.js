@@ -1,22 +1,19 @@
-// import galleryContent from "./galleryContent.js";
-// import control from "./control.js";
+import galleryContent from "./galleryContent.js";
+import control from "./control.js";
 
 export default {
   name: "wrap",
   data() {
-    return {
-      count: 123,
-    };
+    return {};
   },
-  // components: {
-  //   galleryContent,
-  //   control,
-  // },
+  components: {
+    galleryContent,
+    control,
+  },
   template: `
-  <div id="wrap">
-    {{count}}
-      <!-- <gallery-content></gallery-content>
-      <control></control> -->
+  <div id="wrap" v-cloak>
+      <gallery-content></gallery-content>
+      <control></control>
   </div>
   `,
 };

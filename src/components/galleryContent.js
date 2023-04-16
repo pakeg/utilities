@@ -1,9 +1,14 @@
 export default {
   name: "gallery-content",
-  inject: ["photos", "styles"],
+  inject: ["photos", "activeIndx"],
   template: `
-  <div id="images" :class="styles.className">
-    <img v-for="photo in photos" :src="photo" loading="lazy"/>
+  <div id="images">
+  
+    <template v-for="(photo, indx) in photos" :key="photo">
+      <Transition name="list" mode="out-in">
+        <img :src="photo" loading="lazy" v-if="indx == activeIndx"/>
+      </Transition>
+    </template>
   </div>
   `,
 };

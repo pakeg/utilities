@@ -1,0 +1,56 @@
+#wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#images {
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  height: 350px;
+}
+#images img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* controlls */
+#control {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+#control img {
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+}
+
+#current {
+  position: absolute;
+  border-radius: 6px;
+  background-color: rgb(240 240 240 / 60%);
+  cursor: pointer;
+}
+#control > div.wraper {
+  display: flex;
+}
+#control .blockImg {
+  display: flex;
+  cursor: pointer;
+}
+#control .blockImg img {
+  align-self: center;
+  user-select: none;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+}
