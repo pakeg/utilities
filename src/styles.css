@@ -3,6 +3,10 @@ body {
   font-family: sans-serif;
   padding: 0;
   margin: 0;
+  background: #a7a3a3;
+}
+body > div > div {
+  height: 100vh;
 }
 #app {
   display: flex;

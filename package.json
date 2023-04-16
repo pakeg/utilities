@@ -7,16 +7,18 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
-  "dependencies": {
-    "parcel-bundler": "^1.12.5"
-  },
   "devDependencies": {
     "@babel/core": "7.2.0",
-    "typescript": "4.4.4"
+    "parcel": "2.0.0-beta.1",
+    "typescript": "4.4.4",
+    "typings-for-css-modules-loader": "^0.1.1"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
   },
+  "plugins": [
+    "@parcel/transformer-image"
+  ],
   "keywords": [
     "javascript",
     "starter"
